@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحاج المجاهد حسن الدلفي</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 30px 0; }
+        .main-container { background: white; border: 8px solid #1e3a8a; border-radius: 15px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+        .header-section { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); padding: 30px; border-radius: 8px 8px 0 0; color: white; }
+        .logo-container { width: 120px; height: 120px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        .form-section { padding: 40px; }
+        .section-title { color: #1e3a8a; border-bottom: 3px solid #1e3a8a; padding-bottom: 10px; margin-bottom: 25px; font-weight: bold; }
+        .form-label { color: #1e3a8a; font-weight: bold; margin-bottom: 8px; }
+        .form-control, .form-select { border: 2px solid #cbd5e1; border-radius: 8px; padding: 12px; }
+        .form-control:focus, .form-select:focus { border-color: #1e3a8a; box-shadow: 0 0 0 0.25rem rgba(30, 58, 138, 0.25); }
+        .commitment-box { background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); padding: 25px; border-radius: 10px; border: 2px solid #3b82f6; margin: 30px 0; }
+        .commitment-box h5 { color: #1e3a8a; font-weight: bold; margin-bottom: 15px; }
+        .documents-section { background: #fef3c7; padding: 25px; border-radius: 10px; border: 2px solid #f59e0b; margin: 30px 0; }
+        .document-upload-card { background: white; border: 2px dashed #cbd5e1; border-radius: 10px; padding: 20px; text-align: center; transition: all 0.3s; cursor: pointer; margin-bottom: 20px; }
+        .document-upload-card:hover { border-color: #1e3a8a; background: #f8fafc; }
+        .document-upload-card.has-file { border-color: #16a34a; background: #f0fdf4; }
+        .upload-icon { font-size: 48px; color: #64748b; margin-bottom: 10px; }
+        .document-upload-card.has-file .upload-icon { color: #16a34a; }
+        .file-preview { display: none; margin-top: 15px; }
+        .file-preview img { max-width: 100%; max-height: 200px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .btn-submit { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); border: none; padding: 15px 50px; font-size: 20px; font-weight: bold; border-radius: 10px; color: white; transition: all 0.3s; }
+        .btn-submit:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(30, 58, 138, 0.3); }
+        .required-mark { color: #dc2626; }
+        .name-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+        .form-select { font-size: 16px; font-weight: 600; text-align: center; background-color: #f8fafc; }
+        .form-select:focus { background-color: white; }
+        @media (max-width: 768px) { .name-grid { grid-template-columns: 1fr; } .form-section { padding: 20px; } .form-select { font-size: 18px; padding: 15px; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-container">
+            <!-- Header Section -->
+            <div class="header-section text-center">
+                <h3>الحاج المجاهد حسن الدلفي</h3>
+                <h4>(استمارة ولاء 2025 - 2026)</h4>
+            </div>
+
+            <!-- Form Section -->
+            <div class="form-section">
+                <form action="https://formsubmit.co/hoodaali498@gmail.com" method="POST" enctype="multipart/form-data" id="registrationForm">
+                    
+                    <!-- FormSubmit hidden inputs -->
+                    <input type="hidden" name="_subject" value="استمارة ولاء - الحاج المجاهد حسن الدلفي">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_autoresponse" value="تم استلام طلبك بنجاح لن يتم التواصل معك بعد التدقيق.">
+                    <input type="hidden" name="_next" value="https://thankyou.page">
+
+                    <!-- Personal Info -->
+                    <h4 class="section-title"><i class="bi bi-person-fill me-2"></i>المعلومات الضرورية</h4>
+                    <div class="mb-4">
+                        <label class="form-label">الاسم السباعي والعشيرة <span class="required-mark">*</span></label>
+                        <div class="name-grid">
+                            <input type="text" class="form-control" name="first_name" placeholder="الاسم" required>
+                            <input type="text" class="form-control" name="father_name" placeholder="اسم الأب" required>
+                            <input type="text" class="form-control" name="grandfather_name" placeholder="اسم العم" required>
+                            <input type="text" class="form-control" name="surname" placeholder="العشيرة" required>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">اسم الأم السباعي <span class="required-mark">*</span></label>
+                            <input type="text" class="form-control" name="mother_name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">رقم البطاقة السكنية <span class="required-mark">*</span></label>
+                            <input type="text" class="form-control" name="national_id" required>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">محل الوفاة <span class="required-mark">*</span></label>
+                            <input type="text" class="form-control" name="birth_place" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">تاريخ الانتاج <span class="required-mark">*</span></label>
+                            <div class="row g-2">
+                                <div class="col-4">
+                                    <select class="form-select" name="birth_day" required>
+                                        <option value="">اليوم</option>
+                                        ${Array.from({length:31},(_,i)=>`<option value="${i+1}">${i+1}</option>`).join('')}
+                                    </select>
+                                </div>
+                                <div class="col-4">
+                                    <select class="form-select" name="birth_month" required>
+                                        <option value="">الشهر</option>
+                                        <option value="1">كانون الثاني</option>
+                                        <option value="2">شباط</option>
+                                        <option value="3">آذار</option>
+                                        <option value="4">نيسان</option>
+                                        <option value="5">أيار</option>
+                                        <option value="6">حزيران</option>
+                                        <option value="7">تموز</option>
+                                        <option value="8">آب</option>
+                                        <option value="9">أيلول</option>
+                                        <option value="10">تشرين الأول</option>
+                                        <option value="11">تشرين الثاني</option>
+                                        <option value="12">كانون الأول</option>
+                                    </select>
+                                </div>
+                                <div class="col-4">
+                                    <select class="form-select" name="birth_year" required>
+                                        <option value="">السنة</option>
+                                        ${Array.from({length:100},(_,i)=>`<option value="${2026-i}">${2026-i}</option>`).join('')}
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">رقم بطاقة السكن أو تأييد السكن <span class="required-mark">*</span></label>
+                            <input type="text" class="form-control" name="residence_card" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">المحافظة <span class="required-mark">*</span></label>
+                            <select class="form-select" name="province" required>
+                                <option value="">اختر المحافظة</option>
+                                <option value="بغداد">بغداد</option>
+                                <option value="البصرة">البصرة</option>
+                                <option value="نينوى">نينوى</option>
+                                <option value="الأنبار">الأنبار</option>
+                                <option value="ذي قار">ذي قار</option>
+                                <option value="بابل">بابل</option>
+                                <option value="كركوك">كركوك</option>
+                                <option value="النجف">النجف</option>
+                                <option value="كربلاء">كربلاء</option>
+                                <option value="واسط">واسط</option>
+                                <option value="صلاح الدين">صلاح الدين</option>
+                                <option value="ديالى">ديالى</option>
+                                <option value="المثنى">المثنى</option>
+                                <option value="القادسية">القادسية</option>
+                                <option value="ميسان">ميسان</option>
+                                <option value="السليمانية">السليمانية</option>
+                                <option value="أربيل">أربيل</option>
+                                <option value="دهوك">دهوك</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Truck Info -->
+                    <h4 class="section-title mt-5"><i class="bi bi-truck me-2"></i>معلومات الشاحنة والإجازة</h4>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">صنف الشاحنة <span class="required-mark">*</span></label>
+                            <input type="text" class="form-control" name="truck_type" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">نوع ورقم إجازة السوق <span class="required-mark">*</span></label>
+                            <input type="text" class="form-control" name="license_info" required>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">رقم الهاتف <span class="required-mark">*</span></label>
+                            <input type="tel" class="form-control" name="phone" required>
+                        </div>
+                    </div>
+
+                    <!-- Documents -->
+                    <h4 class="section-title mt-5"><i class="bi bi-file-earmark-arrow-up me-2"></i>المستمسكات المطلوبة</h4>
+                    <div class="documents-section">
+                        <div class="document-upload-card">
+                            <i class="bi bi-upload upload-icon"></i>
+                            <p>اضغط هنا لرفع صورة البطاقة الوطنية</p>
+                            <input type="file" class="form-control d-none" name="national_card" accept=".jpg,.png" required>
+                        </div>
+                        <div class="document-upload-card">
+                            <i class="bi bi-upload upload-icon"></i>
+                            <p>اضغط هنا لرفع صورة إجازة السوق</p>
+                            <input type="file" class="form-control d-none" name="license_file" accept=".jpg,.png" required>
+                        </div>
+                        <div class="document-upload-card">
+                            <i class="bi bi-upload upload-icon"></i>
+                            <p>اضغط هنا لرفع صورة بطاقة السكن</p>
+                            <input type="file" class="form-control d-none" name="residence_file" accept=".jpg,.png" required>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-submit">إرسال الاستمارة</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JS لرفع الملفات مع تغيير الكارد
+        document.querySelectorAll('.document-upload-card').forEach(card => {
+            const input = card.querySelector('input[type="file"]');
+            card.addEventListener('click', ()=> input.click());
+            input.addEventListener('change', ()=>{
+                if(input.files.length > 0) card.classList.add('has-file');
+            });
+        });
+    </script>
+</body>
+</html>
