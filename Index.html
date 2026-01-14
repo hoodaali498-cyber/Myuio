@@ -2,41 +2,101 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>موقع تجريبي</title>
+  <title>موقع تجريبي مع صور</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f2f2f2;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+    }
+
+    header {
+      background: #333;
+      color: white;
+      padding: 20px;
       text-align: center;
-      padding: 40px;
     }
-    h1 {
-      color: #333;
+
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
     }
-    p {
-      font-size: 18px;
-      color: #555;
+
+    .card {
+      background: white;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
     button {
       padding: 10px 20px;
-      font-size: 16px;
       background: #007bff;
-      color: #fff;
+      color: white;
       border: none;
       border-radius: 5px;
       cursor: pointer;
     }
+
     button:hover {
       background: #0056b3;
+    }
+
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 15px;
     }
   </style>
 </head>
 <body>
 
-  <h1>أهلاً بك 👋</h1>
-  <p>هذا موقع HTML تجريبي شغال 100%</p>
-  <button onclick="alert('زر شغال!')">اضغط هنا</button>
+<header>
+  <h1>موقعي التجريبي 🌐</h1>
+  <p>تجربة HTML + صور + تنسيق</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>عن الموقع</h2>
+    <p>
+      هذا موقع تجريبي للتأكد من تشغيل HTML على الإنترنت
+      باستخدام GitHub Pages أو أي استضافة.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>صورة تجريبية</h2>
+    <img src="https://picsum.photos/800/400" alt="صورة تجريبية">
+    <p>هاي صورة من الإنترنت للتجربة</p>
+  </div>
+
+  <div class="card">
+    <h2>تفاعل</h2>
+    <p>اضغط الزر للتأكد إن JavaScript شغال</p>
+    <button onclick="alert('كلشي شغال تمام ✅')">
+      اضغط هنا
+    </button>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 موقع تجريبي</p>
+</footer>
 
 </body>
 </html>
