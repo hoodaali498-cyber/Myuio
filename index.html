@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحاج المجاهد حسن الدلفي - استمارة ولاء</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); min-height: 100vh; padding: 30px 0; font-family: 'Segoe UI', Tahoma, sans-serif; }
+        .main-container { background: white; border: 8px solid #1e3a8a; border-radius: 15px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); max-width: 900px; margin: auto; }
+        .header-section { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); padding: 30px; border-radius: 8px 8px 0 0; color: white; text-align: center; }
+        .logo-container { width: 130px; height: 130px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; overflow: hidden; border: 4px solid #f59e0b; }
+        .form-section { padding: 40px; }
+        .section-title { color: #1e3a8a; border-bottom: 3px solid #1e3a8a; padding-bottom: 10px; margin-bottom: 25px; font-weight: bold; }
+        .form-label { color: #1e3a8a; font-weight: bold; margin-bottom: 8px; }
+        .form-control, .form-select { border: 2px solid #cbd5e1; border-radius: 8px; padding: 12px; }
+        .documents-section { background: #fef3c7; padding: 25px; border-radius: 10px; border: 2px solid #f59e0b; margin: 30px 0; }
+        .document-upload-card { background: white; border: 2px dashed #cbd5e1; border-radius: 10px; padding: 20px; text-align: center; cursor: pointer; margin-bottom: 20px; transition: 0.3s; }
+        .document-upload-card.has-file { border-color: #16a34a; background: #f0fdf4; }
+        .btn-submit { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); border: none; padding: 15px; font-size: 22px; font-weight: bold; border-radius: 10px; color: white; width: 100%; transition: 0.3s; }
+        .btn-submit:disabled { background: #ccc; }
+        .name-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+        @media (max-width: 768px) { .name-grid { grid-template-columns: 1fr; } .form-section { padding: 20px; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-container">
+            <div class="header-section">
+                <div class="logo-container">
+                    <img src="https://d.top4top.io/p_3667sv0hy8.png" alt="الحاج حسن الدلفي" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <h3>الحاج المجاهد حسن الدلفي</h3>
+                <h4>(استمارة ولاء وانتساب 2025 - 2026)</h4>
+            </div>
+
+            <div class="form-section">
+                <form id="registrationForm">
+                    <h4 class="section-title"><i class="bi bi-person-vcard-fill me-2"></i>المعلومات الشخصية</h4>
+                    <div class="mb-4">
+                        <label class="form-label">الاسم الكامل واللقب <span class="text-danger">*</span></label>
+                        <div class="name-grid">
+                            <input type="text" class="form-control" name="first_name" placeholder="الاسم" required>
+                            <input type="text" class="form-control" name="father_name" placeholder="الأب" required>
+                            <input type="text" class="form-control" name="grandfather_name" placeholder="الجد" required>
+                            <input type="text" class="form-control" name="surname" placeholder="اللقب" required>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">اسم الأم الثلاثي <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="mother_name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">رقم البطاقة الوطنية <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="national_id" required>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label class="form-label">محل الولادة <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="birth_place" placeholder="المحافظة" required>
+                        </div>
+                        <div class="col-md-8">
+                            <label class="form-label">تاريخ الولادة <span class="text-danger">*</span></label>
+                            <div class="row g-2">
+                                <div class="col-4"><select class="form-select" name="birth_day" required><option value="">اليوم</option></select></div>
+                                <div class="col-4"><select class="form-select" name="birth_month" required><option value="">الشهر</option></select></div>
+                                <div class="col-4"><select class="form-select" name="birth_year" required><option value="">السنة</option></select></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">رقم بطاقة السكن أو التأييد <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="residence_card_num" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">المحافظة (السكن الحالي) <span class="text-danger">*</span></label>
+                            <select class="form-select" name="province" required>
+                                <option value="">اختر المحافظة</option>
+                                <option value="بغداد">بغداد</option><option value="البصرة">البصرة</option><option value="ميسان">ميسان</option>
+                                <option value="ذي قار">ذي قار</option><option value="بابل">بابل</option><option value="النجف">النجف</option>
+                                <option value="واسط">واسط</option><option value="ديالى">ديالى</option><option value="صلاح الدين">صلاح الدين</option>
+                                <option value="الأنبار">الأنبار</option><option value="نينوى">نينوى</option><option value="كركوك">كركوك</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <h4 class="section-title mt-5"><i class="bi bi-truck me-2"></i>معلومات الشاحنة والإجازة</h4>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">صنف الشاحنة <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="truck_type" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">نوع ورقم إجازة السوق <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="license_info" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">رقم الهاتف <span class="text-danger">*</span></label>
+                        <input type="tel" class="form-control" name="phone" required>
+                    </div>
+
+                    <h4 class="section-title mt-5"><i class="bi bi-camera-fill me-2"></i>المستمسكات (صور واضحة)</h4>
+                    <div class="documents-section">
+                        <div class="document-upload-card" onclick="document.getElementById('file1').click()">
+                            <i class="bi bi-cloud-arrow-up-fill fs-1 text-secondary"></i> <p id="t1">صورة البطاقة الوطنية</p>
+                            <input type="file" id="file1" name="national_card" accept="image/*" class="d-none" required>
+                        </div>
+                        <div class="document-upload-card" onclick="document.getElementById('file2').click()">
+                            <i class="bi bi-cloud-arrow-up-fill fs-1 text-secondary"></i> <p id="t2">صورة إجازة السوق</p>
+                            <input type="file" id="file2" name="license_file" accept="image/*" class="d-none" required>
+                        </div>
+                        <div class="document-upload-card" onclick="document.getElementById('file3').click()">
+                            <i class="bi bi-cloud-arrow-up-fill fs-1 text-secondary"></i> <p id="t3">صورة بطاقة السكن</p>
+                            <input type="file" id="file3" name="residence_file" accept="image/*" class="d-none" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" id="btnSubmit" class="btn-submit">إرسال الاستمارة</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw0MgNR3dTO114N0rxscpemIfYIkDQ_GCoiKed5SFupGJMER7UMqHJ1L1jyN_qP6djj/exec';
+        
+        // تعبئة قوائم التاريخ تلقائياً بالأسماء العراقية
+        const dSel = document.querySelector('select[name="birth_day"]');
+        const mSel = document.querySelector('select[name="birth_month"]');
+        const ySel = document.querySelector('select[name="birth_year"]');
+        for(let i=1; i<=31; i++) dSel.innerHTML += `<option value="${i}">${i}</option>`;
+        const months = ["كانون الثاني", "شباط", "آذار", "نيسان", "أيار", "حزيران", "تموز", "آب", "أيلول", "تشرين الأول", "تشرين الثاني", "كانون الأول"];
+        months.forEach((m, i) => mSel.innerHTML += `<option value="${m}">${m}</option>`);
+        for(let i=2015; i>=1940; i--) ySel.innerHTML += `<option value="${i}">${i}</option>`;
+
+        const form = document.getElementById('registrationForm');
+        const btn = document.getElementById('btnSubmit');
+
+        document.querySelectorAll('input[type="file"]').forEach(input => {
+            input.addEventListener('change', function() {
+                if(this.files[0]) {
+                    this.parentElement.classList.add('has-file');
+                    this.parentElement.querySelector('p').innerText = "✅ تم اختيار: " + this.files[0].name;
+                }
+            });
+        });
+
+        const toBase64 = file => new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = () => resolve({ contents: reader.result.split(',')[1], type: file.type });
+        });
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            btn.disabled = true;
+            btn.innerText = "جاري رفع البيانات... يرجى الانتظار";
+
+            const formData = new FormData(form);
+            const data = {};
+            formData.forEach((value, key) => { if(!(value instanceof File)) data[key] = value; });
+
+            try {
+                if(document.getElementById('file1').files[0]) data.national_card_data = JSON.stringify(await toBase64(document.getElementById('file1').files[0]));
+                if(document.getElementById('file2').files[0]) data.license_file_data = JSON.stringify(await toBase64(document.getElementById('file2').files[0]));
+                if(document.getElementById('file3').files[0]) data.residence_file_data = JSON.stringify(await toBase64(document.getElementById('file3').files[0]));
+
+                await fetch(scriptURL, { method: 'POST', body: new URLSearchParams(data) });
+                alert("تم إرسال استمارة الحاج حسن الدلفي بنجاح!");
+                form.reset();
+                document.querySelectorAll('.document-upload-card').forEach(c => c.classList.remove('has-file'));
+            } catch (error) {
+                alert("حدث خطأ في الإرسال.");
+            } finally {
+                btn.disabled = false;
+                btn.innerText = "إرسال الاستمارة";
+            }
+        });
+    </script>
+</body>
+</html>
