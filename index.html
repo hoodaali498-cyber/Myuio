@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>نموذج تواصل مباشر</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    text-align: right;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+h2 { color: #333; }
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+
+<h2>نموذج تواصل مباشر</h2>
+
+<form id="form">
+    <input type="text" name="name" placeholder="الاسم" required>
+    <input type="email" name="email" placeholder="الإيميل" required>
+    <textarea name="message" placeholder="اكتب رسالتك" required></textarea>
+    <button type="submit">إرسال</button>
+</form>
+
+<script>
+document.getElementById("form").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    fetch("https://script.google.com/macros/s/AKfycbw2pLmgkeagE-QWzGzu8TvX24jQhG_koYWuf_I1QW0D6WgsPqZuWzjlij4vttLmIkUy/exec", {
+        method: "POST",
+        body: new FormData(this)
+    })
+    .then(response => response.text())
+    .then(data => alert(data)) // يظهر رسالة السكربت مباشرة
+    .catch(err => alert("حصل خطأ ❌"));
+});
+</script>
+
+</body>
+</html>
